@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chip-main-container {
   display: flex;
   flex-direction: column;
+  width: 100%; 
+  border-bottom: 4px solid #007bff; 
+}
+
+.chip-input-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chip {
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  padding: 8px 12px;
+  margin: 4px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.chip-remove {
+  cursor: pointer;
+  margin-left: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-list {
+  margin-top: 8px;
+  width: 25%; 
+  position: absolute;
+  top: 10%;
+}
+
+.item {
+  cursor: pointer;
+  padding: 8px 12px;
+  margin: 4px;
+  background-color: #f0f0f0;
+  border-radius: none;
+  color: #000;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  margin: 4px;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.chip-avatar {
+  width: 20px; 
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.item-avatar {
+  width: 20px; 
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+
+.item:hover {
+  background-color: #e0e0e0;
+}
+
+.chip:hover {
+  background-color: #e0e0e0; 
 }
